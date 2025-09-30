@@ -6,7 +6,7 @@ public class IsPalindrome {
         int rev = 0;
         while(num != 0){
             int digit = num % 10;
-            rev = rev * digit + 10;
+            rev = rev * 10 + digit;
             num = num / 10;
         }
         if (rev == n){
@@ -17,7 +17,7 @@ public class IsPalindrome {
 
     }
     public static void main(String[] args) {
-        System.out.println(palindrome(121));
+        System.out.println(palindrome(1223));
 
     }
 }
