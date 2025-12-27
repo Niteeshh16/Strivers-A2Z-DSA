@@ -1,0 +1,16 @@
+package linkedlist;
+
+public class Dummy {
+    Node head;
+
+    int countNodes(){
+        int count = 0;
+
+        Node temp = head;
+        while(temp != null){
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+}
