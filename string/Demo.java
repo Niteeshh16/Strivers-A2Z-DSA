@@ -2,15 +2,13 @@ package string;
 
 public class Demo {
     public static void main(String[] args) {
-        String s= "Jello";
-        int count = 0;
+        String s = "hello";
+        String rev = "";
 
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'a' || s.charAt(i) == 'e'){
-                count++;
-            }
+        for (int i = s.length()-1; i>=0; i--){
+            rev += s.charAt(i);
         }
-        System.out.println(count);
+        System.out.println(rev);
 
     }
 }

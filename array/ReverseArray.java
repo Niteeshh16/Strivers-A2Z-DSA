@@ -8,7 +8,7 @@ public class ReverseArray {
         int right = nums.length-1;
 
         while (left < right){
-            int temp = nums[0];
+            int temp = nums[left];
             nums[left] = nums[right];
             nums[right] = temp;
 
